@@ -8,17 +8,17 @@ import StrapDropdown from './StrapDropdown';
 // import ImportComponent from './ImportConpoent';
 // import Life from './Life';
 // import Lifecycle from './Lifecycle';
-// import Lifecycleex from './Lifecycleex';
+import Lifecycleex from './Lifecycleex';
 // import Jquery from './Jquery';
 // import Card from './Card';
-
+import Es6 from './Es6'
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
-      <p>HTML 적용하기</p>
-      <StrapDropdown/>
+      <p>CSS 적용하기</p>
+      <Es6/>
     </div>
   );
 }
