@@ -12,13 +12,15 @@ import Lifecycleex from './Lifecycleex';
 // import Jquery from './Jquery';
 // import Card from './Card';
 import Es6 from './Es6'
+import Variable from './Variable';
+import SperadOperator from './SperadOperator';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <Es6/>
+      <SperadOperator/>
     </div>
   );
 }

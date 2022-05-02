@@ -15,6 +15,11 @@ class Es6 extends Component {
         var Es6String1 = 'Es6';
         var Es6String2 = '입니다';
         console.log(`${Es6String1} 문자열${Es6String2}________다음 줄 입니다`);
+
+        var LongString = "ES6에 추가된 String 함수들입니다";
+        console.log('startsWith : '+LongString.startsWith("ES6에 추가"));
+        console.log('endWith : '+LongString.endsWith("함수들입니다."));
+        console.log('includes : '+LongString.includes("추가된 String"));
     }
 
     render() {
