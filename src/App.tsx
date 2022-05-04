@@ -14,13 +14,26 @@ import Lifecycleex from './Lifecycleex';
 import Es6 from './Es6'
 import Variable from './Variable';
 import SperadOperator from './SperadOperator';
+import ClassProtoytpe from './Class&prototype';
+import ArrowFunction from './ArrowFunction';
+import ForEach from './ForEach';
+import Map from './Map';
+import Jquery from './Jquery';
+import Props from './Props';
+import PropsDatatype from './PropsDatatype';
+import PropsBoolean from './PropsBoolean';
+import PropsRequired from './PropsRequired';
+import PropsDefault from './PropsDefault';
+import PropsNode from './PropsNode';
+import ReactState from './ReactState';
+import SetState from './SetState';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <SperadOperator/>
+      <SetState/>
     </div>
   );
 }
