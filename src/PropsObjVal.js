@@ -4,23 +4,14 @@ import datatype from 'prop-types';
 class PropsObjVal extends Component {
     render () {
         let {
-            Object Json
+            Object
         } = this.props
         return (
             <div style={{paddig: "0px"}}>
-                <p>ObjectProps: {JSON.stringify(Object Json)}</p>
+                <p>ObjectProps: {JSON.stringify(Object)}</p>
             </div>
         )
     }
-}
-
-PropsDatatype.propTypes = {
-    String: datatype.number,
-    Number: datatype.number,
-    Boolean: datatype.bool,
-    Array: datatype.array,
-    Object: datatype.object,
-    Function: datatype.func,
 }
 
 export default PropsObjVal;
