@@ -27,13 +27,14 @@ import PropsDefault from './PropsDefault';
 import PropsNode from './PropsNode';
 import ReactState from './ReactState';
 import SetState from './SetState';
+import ForceUpdate from './ForceUpdate';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <SetState/>
+      <ForceUpdate/>
     </div>
   );
 }
