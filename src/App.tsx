@@ -28,13 +28,18 @@ import PropsNode from './PropsNode';
 import ReactState from './ReactState';
 import SetState from './SetState';
 import ForceUpdate from './ForceUpdate';
+import ComponentClass from './ComponentClass';
+import PureComponentClass from './PureComponentClass';
+import ShallowEqual from './ShallowEqual';
+import ReactStrapBadge from './ReactStrapBadge';
+import ReactstrapBreadcrumbs from './ReactstrapBreadcrumbs';
 
-function App() {
+function App() {  
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <ForceUpdate/>
+      <ReactstrapBreadcrumbs/>
     </div>
   );
 }
