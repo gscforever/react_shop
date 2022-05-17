@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import StrAddButton from './StrAddButton'
 // import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
@@ -33,15 +35,29 @@ import PureComponentClass from './PureComponentClass';
 import ShallowEqual from './ShallowEqual';
 import ReactStrapBadge from './ReactStrapBadge';
 import ReactstrapBreadcrumbs from './ReactstrapBreadcrumbs';
+import ReactstrapButtonGroup from './ReactstrapButtonGroup';
+import ReactstrapButtons from './ReactstrapButtons';
+import ReactstrapCard from './ReactstrapCard';
 
-function App() {  
-  return (
-    <div>
-      <h1>Start React 200!</h1>
-      <p>CSS 적용하기</p>
-      <ReactstrapBreadcrumbs/>
-    </div>
-  );
+class App extends Component {  
+  render() {
+    return (
+      <div>
+        <h1>Start React 200!</h1>
+        <span>{this.props.str}</span><br/>
+        <StrAddButton AppProp="200"/>
+      </div>
+    );
+  }
 }
+
+let mapStateToProps = (state, props) => {
+  console.log('props from indes.js : ' + props.indexProp)
+  return {
+    str: state.data.str,
+  };
+};
+
+App = connect(mapStateToProps, null)(App);
 
 export default App;
